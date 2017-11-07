@@ -1,0 +1,1 @@
+En esta entrada hacemos una revisión de algunas de las principales escuelas del pensamiento científico para hacer una introducción al estudio de los sitemas, en específico a los sistemas complejos y el análisis de redes. De esta manera 
