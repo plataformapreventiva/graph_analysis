@@ -70,7 +70,7 @@ smart_open.smart_open(EDGEL+'person_municipality.csv','w') as l10:
                         if row[3] != "" and row[4] != "":
                             l7.write('|'.join([row[3],row[4],'pertenece'])+'\n')
                         if row[23] != "" and row[15] != "":
-                            l8.write('|'.join([row[15],row[23],'pertenece'])+'\n')
+                            l8.write('|'.join([row[23],row[15],'pertenece'])+'\n')
                         if row[23] != "" and row[4] != "":
                             l9.write('|'.join([row[23],row[4],'pertenece'])+'\n')
                         if row[13] !="" and row[23] !="" and row[19] !="":
