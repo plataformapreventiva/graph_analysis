@@ -21,11 +21,11 @@ setting() {
 }
 
 if [ "$1" == "neo4j" ]; then
-    setting "dbms.tx_log.rotation.retention_policy" "${NEO4J_dbms_txLog_rotation_retentionPolicy:-16384M size}"
-    setting "dbms.memory.pagecache.size" "${NEO4J_dbms_memory_pagecache_size:-16384M}"
+    setting "dbms.tx_log.rotation.retention_policy" "${NEO4J_dbms_txLog_rotation_retentionPolicy:-1000M size}"
+    setting "dbms.memory.pagecache.size" "${NEO4J_dbms_memory_pagecache_size:-12G}"
     setting "wrapper.java.additional=-Dneo4j.ext.udc.source" "${NEO4J_UDC_SOURCE:-docker}" neo4j-wrapper.conf
-    setting "dbms.memory.heap.initial_size" "${NEO4J_dbms_memory_heap_maxSize:-16384M}" neo4j-wrapper.conf
-    setting "dbms.memory.heap.max_size" "${NEO4J_dbms_memory_heap_maxSize:-16384M}" neo4j-wrapper.conf
+    setting "dbms.memory.heap.initial_size" "${NEO4J_dbms_memory_heap_maxSize:-4G}" neo4j-wrapper.conf
+    setting "dbms.memory.heap.max_size" "${NEO4J_dbms_memory_heap_maxSize:-16G}" neo4j-wrapper.conf
     setting "dbms.unmanaged_extension_classes" "${NEO4J_dbms_unmanagedExtensionClasses:-}"
     setting "dbms.allow_format_migration" "${NEO4J_dbms_allowFormatMigration:-}"
     setting "dbms.security.procedures.unrestricted" "${NEO4J_dbms_security_procedures_unrestricted:-apoc.*}"
