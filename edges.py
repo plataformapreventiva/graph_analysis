@@ -61,17 +61,17 @@ smart_open.smart_open(EDGEL+'person_municipality.csv','w') as l10:
                     h10.write(':START_ID|:END_ID|localidad|:TYPE|fecha')
                     counter += 1
                 else:
-                    if random.random() < 0.1:
-                        if re.match(the_id, row[13]) is not None and len(row)==25:
-                            if row[13]!="":
-                                l6.write('|'.join([row[4],row[13],row[19],payment1,row[14],'pago'])+'\n')
-                            else:
-                                l6.write('|'.join([row[4],'no-id',row[19],payment1,row[14],'pago'])+'\n')
-                            if row[3] != "" and row[4] != "":
-                                l7.write('|'.join([row[3],row[4],'pertenece'])+'\n')
-                            if row[23] != "" and row[15] != "":
-                                l8.write('|'.join([row[15],row[23],'pertenece'])+'\n')
-                            if row[23] != "" and row[4] != "":
-                                l9.write('|'.join([row[23],row[4],'pertenece'])+'\n')
-                            if row[13] !="" and row[23] !="" and row[19] !="":
-                                l10.write('|'.join([row[13],row[23],row[19],'vive',payment1])+'\n')
+                    # if random.random() < 0.1:
+                    if re.match(the_id, row[13]) is not None and len(row)==25:
+                        if row[13]!="":
+                            l6.write('|'.join([row[4],row[13],row[19],payment1,row[14],'pago'])+'\n')
+                        else:
+                            l6.write('|'.join([row[4],'no-id',row[19],payment1,row[14],'pago'])+'\n')
+                        if row[3] != "" and row[4] != "":
+                            l7.write('|'.join([row[3],row[4],'pertenece'])+'\n')
+                        if row[23] != "" and row[15] != "":
+                            l8.write('|'.join([row[15],row[23],'pertenece'])+'\n')
+                        if row[23] != "" and row[4] != "":
+                            l9.write('|'.join([row[23],row[4],'pertenece'])+'\n')
+                        if row[13] !="" and row[23] !="" and row[19] !="":
+                            l10.write('|'.join([row[13],row[23],row[19],'vive',payment1])+'\n')
