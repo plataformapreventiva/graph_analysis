@@ -4,9 +4,9 @@ MAINTAINER Ollin Demian Langle Chimal <ollin.langle@ciencias.unam.mx>
 
 ENV REFRESHED_AT 2017-10-18
 
-ADD http://dist.neo4j.org/neo4j-community-3.3.0-unix.tar.gz /var/lib
-RUN tar -xzvf /var/lib/neo4j-community-3.3.0-unix.tar.gz
-RUN mv neo4j-community-3.3.0 /var/lib/neo4j
+ADD http://dist.neo4j.org/neo4j-enterprise-3.3.0-unix.tar.gz /var/lib
+RUN tar -xzvf /var/lib/neo4j-enterprise-3.3.0-unix.tar.gz
+RUN mv neo4j-enterprise-3.3.0 /var/lib/neo4j
 #RUN mv /var/lib/neo4j-* /var/lib/neo4j
 
 #COPY .env .env
