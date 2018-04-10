@@ -1,7 +1,4 @@
 # Graph Analysis
-La finalidad de este repositorio es el análisis del sistema de beneficiarios como un sistema complejo.
+This repo is for the creation of a graph oriented database in Neo4j for the "Padrón Único de Beneficiarios (PUB)".
 
-La primera parte del mismo es la realizción de una base de datos orientada a grafos en Neo4j con Docker.
-
-TODO:
-Pasar la realización de los CSV de ingesta a smart_open.
+We use Docker for portability and is ready for deploying a High Availability cluster.
